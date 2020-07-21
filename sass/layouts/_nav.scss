@@ -32,7 +32,6 @@ header {
   }
 
   &__link {
-
     &,
     &:link,
     &:visited {
@@ -54,7 +53,7 @@ header {
         background-color: $color-primary-light;
 
         opacity: 0;
-        transition: opacity .3s;
+        transition: opacity 0.3s;
       }
 
       &:not(:last-child) {
@@ -77,4 +76,16 @@ header {
   &__item {
     display: inline-block;
   }
+}
+
+// Sticky Nav
+
+.sticky {
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: $color-white;
+  box-shadow: 0 2px 4px $color-primary-light;
 }
