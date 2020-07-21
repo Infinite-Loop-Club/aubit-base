@@ -1,10 +1,92 @@
 .footer{
 
+  color: $color-white;
+
   &__top{
     background-color: $color-primary-light;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+
+  &__heading{
+    font-size: 2rem;
+  }
+
+  &__quick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
+
+.social__list{
+  list-style: none;
+
+  &--icon{
+    width: 2rem;
+    height: 2rem;
+    fill: $color-white;
+    margin-right: 1rem;
+  }
+
+  &-item{
+    
+    &:not(:last-child){
+      margin-bottom: 1.3rem;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: currentColor;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}
+
+.quick__link{
+  list-style: none;
+  text-align: center;
+
+  &-item{
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: currentColor;
+      font-size: 1.5rem;
+      display: inline-block;
+    }
+  }
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.contact__heading{
+  font-size: 2rem;
+}
+
+.contact__detail{
+    font-size: 1.5rem;
+
+    &:first-child{
+      margin-top: .5rem;
+    }
+
+    &:not(:last-child){
+      margin-bottom: .5rem;
+    }
+  }
+
 
 
 .copyrights{
@@ -15,7 +97,7 @@
   
 
   &__text{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
 }
