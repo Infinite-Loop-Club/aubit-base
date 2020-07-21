@@ -7,7 +7,7 @@
   position: relative;
 
   &-container {
-    @include setWidth;
+    @include setWidth; 
   }
 
   &__title {
