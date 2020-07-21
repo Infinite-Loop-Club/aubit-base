@@ -1,7 +1,20 @@
 .nav {
   &-container {
     @include setWidth;
+    padding: 3rem 0;
     display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+  }
+
+  &__brand {
+    width: 4rem;
+    height: 4rem;
+    margin-right: auto;
+
+    &-logo {
+      @include fullSizeImage;
+    }
   }
 
   &__list {
@@ -15,6 +28,43 @@
     &:visited {
       text-decoration: none;
       color: $color-gray-8;
+      display: inline-flex;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 50%;
+        border-radius: 1px;
+        background-color: $color-primary-light;
+
+        opacity: 0;
+        transition: opacity .3s;
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
     }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &-active,
+    &:active {
+      color: $color-primary-light !important;
+    }
+  }
+
+  &__item {
+    display: inline-block;
   }
 }
