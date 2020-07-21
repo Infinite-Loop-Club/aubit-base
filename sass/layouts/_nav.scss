@@ -1,0 +1,20 @@
+.nav {
+  &-container {
+    @include setWidth;
+    display: flex;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-gray-8;
+    }
+  }
+}

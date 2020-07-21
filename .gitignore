@@ -106,5 +106,5 @@ dist
 
 # FOR DEVELOPMENT
 
-# css/*
-# *.css
+css/*
+*.css
