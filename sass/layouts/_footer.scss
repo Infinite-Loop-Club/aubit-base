@@ -1,0 +1,21 @@
+.footer{
+
+  &__top{
+    background-color: $color-primary-light;
+  }
+
+}
+
+
+.copyrights{
+  background-color: $color-primary-dark;
+  text-align: center;
+  color: $color-white;
+  padding: 1rem 0;
+  
+
+  &__text{
+    font-size: 1rem;
+  }
+
+}
