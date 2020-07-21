@@ -1,38 +1,46 @@
-.footer{
+.footer {
 
   color: $color-white;
 
-  &__top{
+  &__top {
     background-color: $color-primary-light;
-    display: flex;
-    justify-content: space-between;
     padding: 3rem 0;
+
+    &-inner {
+      @include setWidth;
+      display: flex;
+      justify-content: space-between;
+
+      &>div {
+        flex-basis: 33.3333%;
+      }
+    }
   }
 
-  &__heading{
+  &__heading {
     font-size: 2rem;
   }
 
-  &__quick{
+  &__quick {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
-.social__list{
+.social__list {
   list-style: none;
 
-  &--icon{
+  &--icon {
     width: 2rem;
     height: 2rem;
     fill: $color-white;
     margin-right: 1rem;
   }
 
-  &-item{
-    
-    &:not(:last-child){
+  &-item {
+
+    &:not(:last-child) {
       margin-bottom: 1.3rem;
     }
 
@@ -48,11 +56,12 @@
 
 }
 
-.quick__link{
+.quick__link {
   list-style: none;
   text-align: center;
 
-  &-item{
+  &-item {
+
     a:link,
     a:visited {
       text-decoration: none;
@@ -63,38 +72,36 @@
   }
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
 
-.contact__heading{
+.contact__heading {
   font-size: 2rem;
 }
 
-.contact__detail{
-    font-size: 1.5rem;
+.contact__detail {
+  font-size: 1.5rem;
 
-    &:first-child{
-      margin-top: .5rem;
-    }
-
-    &:not(:last-child){
-      margin-bottom: .5rem;
-    }
+  &:first-child {
+    margin-top: .5rem;
   }
 
+  &:not(:last-child) {
+    margin-bottom: .5rem;
+  }
+}
 
 
-.copyrights{
+
+.copyrights {
   background-color: $color-primary-dark;
   text-align: center;
   color: $color-white;
-  padding: 1rem 0;
-
-  &__text{
-    font-size: 1.2rem;
-  }
+  padding: 1.4rem 0;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
