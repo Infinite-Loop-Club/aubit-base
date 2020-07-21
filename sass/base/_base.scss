@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: $font-family-default;
+
+  @include respond(tab-port) {
+    font-size: 56.25%; // 9px
+  }
+
+  @include respond(huge) {
+    font-size: 75%; // 12px
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: $color-primary-dark;
+  color: $color-white;
+  display: inline-block;
+}
