@@ -11,7 +11,7 @@ header {
 
   &-container {
     @include setWidth;
-    padding: 1.5rem 0;
+    padding: 3rem 0;
     display: flex;
     font-size: 1.8rem;
     align-items: center;
@@ -82,7 +82,7 @@ header {
 
 .sticky {
   margin: 0 auto;
-  padding: 0;
+  padding: 2rem 0 !important;
   position: fixed;
   z-index: 1000;
   width: 100%;
