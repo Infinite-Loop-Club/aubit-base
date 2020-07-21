@@ -1,44 +1,41 @@
 .feature {
-  @include clearfix;
-
-  margin: 0 auto;
-  padding: 1rem;
+  @include setWidth;
+  margin: 5rem auto;
 }
 
 .vision {
-  margin: 1rem 1rem;
   padding: 2rem;
-  width: 45vw;
+  width: 50%;
   display: inline-block;
 
-  &__heading{
+  &__heading {
     color: $color-primary-light;
     font-size: 2rem;
     font-weight: 600;
   }
 
-  &__text{
+  &__text {
     font-size: 1.5rem;
   }
 
 }
 
 .nba {
-  margin: 1rem 1rem;
   padding: 2rem;
-  width: 45vw;
+  width: 50%;
   display: inline-block;
 
-  &__heading{
+  &__heading {
     color: $color-primary-light;
     font-size: 2rem;
     font-weight: 600;
   }
-  
+
 
   &__list {
     list-style: none;
-    li{
+
+    li {
       font-size: 1.5rem;
     }
 
@@ -46,12 +43,11 @@
 }
 
 .mission {
-  margin: 1rem 1rem;
   padding: 2rem;
-  width: 45vw;
+  width: 50%;
   float: right;
 
-  &__heading{
+  &__heading {
     color: $color-primary-light;
     font-size: 2rem;
     font-weight: 600;
@@ -59,8 +55,8 @@
 
   &__list {
     list-style: none;
-    
-    li{
+
+    li {
       font-size: 1.5rem;
     }
 
@@ -75,7 +71,7 @@
       display: block;
       height: 3px;
       width: 10%;
-      margin: 3px 0;
+      border-radius: 1px;
       background-color: $color-primary-light;
     }
   }
