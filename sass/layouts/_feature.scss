@@ -10,7 +10,6 @@
   padding: 2rem;
   width: 45vw;
   display: inline-block;
-  float: left;
 }
 
 .nba {
@@ -18,7 +17,6 @@
   padding: 2rem;
   width: 45vw;
   display: inline-block;
-  float: left;
 
   &__list {
     list-style: none;
@@ -29,7 +27,6 @@
   margin: 1rem 1rem;
   padding: 2rem;
   width: 45vw;
-  //   display: inline-block;
   float: right;
 
   &__list {
@@ -48,7 +45,6 @@
       display: inline-block;
       height: 3px;
       width: 50%;
-      border-radius: 3px;
       background-color: $color-primary-light;
     }
   }
