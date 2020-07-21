@@ -1,10 +1,11 @@
 .flash {
   position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 4rem;
+  right: 6rem;
   padding: 1rem;
   border-radius: .5rem;
   background-color: rgba($color-gray-1, .95);
+  box-shadow: .5rem 1rem 2rem rgba($color-black, .4);
 
   &__list {
     list-style: none;
