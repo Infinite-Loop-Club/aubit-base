@@ -32,6 +32,7 @@ header {
   }
 
   &__link {
+
     &,
     &:link,
     &:visited {
@@ -82,11 +83,10 @@ header {
 
 .sticky {
   margin: 0 auto;
-  padding: 2rem 0 !important;
   position: fixed;
   z-index: 1000;
   width: 100%;
   background-color: $color-white;
   box-shadow: 0 2px 4px $color-primary-light;
-  transition: all 1s;
+  transition: all .3s ease-out;
 }
