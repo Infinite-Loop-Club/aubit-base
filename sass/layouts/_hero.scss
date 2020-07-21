@@ -1,13 +1,13 @@
 .hero {
   height: 100vh;
 
-  background-image: linear-gradient(rgba($color-gray-1, 0.8),rgba($color-gray-1, 0.8)), url('../images/hero.png');
+  background-image: linear-gradient(rgba($color-gray-1, 0.8), rgba($color-gray-1, 0.8)), url('../images/hero.png');
   background-size: cover;
   background-position: top;
   position: relative;
 
   &-container {
-    @include setWidth; 
+    @include setWidth;
   }
 
   &__title {
