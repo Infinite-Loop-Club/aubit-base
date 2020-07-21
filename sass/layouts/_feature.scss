@@ -1,11 +1,11 @@
 .feature {
   @include setWidth;
-  margin: 5rem auto;
+  margin: 7rem auto;
 }
 
 .vision {
-  padding: 2rem;
   width: 50%;
+  padding: 1.5rem 1.5rem 1.5rem 0;
   display: inline-block;
 
   &__heading {
@@ -21,8 +21,8 @@
 }
 
 .nba {
-  padding: 2rem;
   width: 50%;
+  padding: 1.5rem 1.5rem 1.5rem 0;
   display: inline-block;
 
   &__heading {
@@ -43,9 +43,9 @@
 }
 
 .mission {
-  padding: 2rem;
   width: 50%;
   float: right;
+  padding: 1.5rem 0 1.5rem 1.5rem;
 
   &__heading {
     color: $color-primary-light;
@@ -63,8 +63,12 @@
   }
 
   &__items {
-    padding: 1rem 0;
     position: relative;
+    padding-bottom: .7rem;
+
+    &:not(:last-child) {
+      margin-bottom: .7rem;
+    }
 
     &:after {
       content: "";
