@@ -1,0 +1,44 @@
+.flash {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: rgba($color-gray-1, .95);
+
+  &__list {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: stretch;
+
+    &--icon {
+      height: 2rem;
+      width: 2rem;
+      margin-right: .5rem;
+    }
+
+    &--text {
+      padding: .3rem;
+      font-size: 1.4rem;
+    }
+  }
+}
