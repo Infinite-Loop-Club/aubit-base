@@ -11,7 +11,7 @@ header {
 
   &-container {
     @include setWidth;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
     display: flex;
     font-size: 1.8rem;
     align-items: center;
@@ -88,5 +88,5 @@ header {
   width: 100%;
   background-color: $color-white;
   box-shadow: 0 2px 4px $color-primary-light;
-  transition: all 0.5s;
+  transition: all 1s;
 }
