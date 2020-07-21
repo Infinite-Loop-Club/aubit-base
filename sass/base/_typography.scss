@@ -32,7 +32,32 @@ body {
   font-size: 2rem;
 }
 
+.heading-primary {
+  &-main {
+    color: $color-primary-light;
+  }
+
+  &-small {
+    font-size: 3.2rem;
+  }
+}
+
 .description {
   font-size: 1.8rem;
   line-height: 1.6em;
+}
+
+.section-title {
+  margin-bottom: 1.3rem;
+
+  &--icon {
+    display: inline-block;
+    height: 2.3rem;
+    width: 2.3rem;
+    margin-right: 1rem;
+  }
+
+  &--text {
+    display: inline-block;
+  }
 }

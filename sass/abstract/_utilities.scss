@@ -20,3 +20,7 @@
   margin-top: 20rem !important;
   margin-bottom: 20rem !important;
 }
+
+.u-align-with-margin {
+  @include setWidth;
+}
