@@ -10,6 +10,17 @@
   padding: 2rem;
   width: 45vw;
   display: inline-block;
+
+  &__heading{
+    color: $color-primary-light;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__text{
+    font-size: 1.5rem;
+  }
+
 }
 
 .nba {
@@ -18,8 +29,19 @@
   width: 45vw;
   display: inline-block;
 
+  &__heading{
+    color: $color-primary-light;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+
   &__list {
     list-style: none;
+    li{
+      font-size: 1.5rem;
+    }
+
   }
 }
 
@@ -29,9 +51,19 @@
   width: 45vw;
   float: right;
 
+  &__heading{
+    color: $color-primary-light;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
   &__list {
     list-style: none;
-    position: relative;
+    
+    li{
+      font-size: 1.5rem;
+    }
+
   }
 
   &__items {
@@ -40,11 +72,10 @@
     &:after {
       content: "";
       position: absolute;
-      left: 25%;
-      bottom: 0;
-      display: inline-block;
+      display: block;
       height: 3px;
-      width: 50%;
+      width: 10%;
+      margin: 3px 0;
       background-color: $color-primary-light;
     }
   }
