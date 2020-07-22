@@ -43,9 +43,10 @@ header {
       background-color: $color-white;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       transform: translateY(-150%);
-      padding: 2rem;
+      padding: 2rem 3rem;
+      margin-top: 1rem;
       opacity: 0;
       transition: all 0.3s;
     }
@@ -132,6 +133,11 @@ header {
   transition: all .2s;
   z-index: 5000;
 
+  @include respond(phone) {
+    position: relative;
+    box-shadow: none;
+  }
+
   &--link {
     text-decoration: none;
     color: initial;
@@ -209,11 +215,10 @@ header {
       top: .9rem;
     }
 
-    &--toggle{
-
+    &--toggle {
       background-color: transparent;
-  
-      &::before{
+
+      &::before {
         top: 0;
         transform: rotate(135deg);
       }
@@ -223,7 +228,7 @@ header {
         transform: rotate(-135deg);
       }
 
-}
+    }
 
   }
 }
