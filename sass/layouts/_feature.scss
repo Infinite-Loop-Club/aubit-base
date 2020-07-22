@@ -1,6 +1,16 @@
 .feature {
   @include setWidth;
+  @include clearfix;
   margin: 7rem auto;
+
+  @include respond(tab-port) {
+    margin: 5rem auto;
+  }
+
+  @include respond(phone) {
+    margin: 4rem auto; 
+  }
+
 }
 
 .vision {
