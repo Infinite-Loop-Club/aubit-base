@@ -21,7 +21,7 @@ const navSlide = () => {
 
   burger.addEventListener("click", () => {
     console.log("clicked");
-    // nav.classList.toggle("nav-active");
+    nav.classList.toggle("nav-active");
   });
 };
 
