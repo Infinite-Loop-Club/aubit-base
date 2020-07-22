@@ -28,6 +28,8 @@ header {
 
     &-logo {
       @include fullSizeImage;
+
+      z-index: 9999;
     }
   }
 
@@ -37,19 +39,24 @@ header {
     @media screen and (max-width: 600px) {
       position: fixed;
       right: 0;
-      height: 90vh;
+      // height: 90vh;
+      max-height: 0;
+      width: 100%;
       top: 7rem;
-      background-color: $color-gray-3;
+      background-color: $color-white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      transform: translateX(100%);
-      transition: all 0.5s ease-in;
+      transform: translateY(-150%);
+      transition: all 0.3s;
+      opacity: 0;
     }
   }
 
   &-active {
-    transform: translateX(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    max-height: 100rem;
   }
 
   &__link {
@@ -135,7 +142,7 @@ header {
     }
   }
 
-  &:hover{
+  &:hover {
     display: block;
   }
 }
@@ -168,4 +175,8 @@ header {
     margin: 0.4rem;
     // border-radius: 20%;
   }
+}
+
+.white-bg {
+  background-color: $color-white;
 }
