@@ -10,7 +10,7 @@
   overflow: hidden;
 
   @include respond(phone) {
-    bottom: -10%;
+    bottom: -7%;
     width: 90%;
     box-shadow: .5rem .5rem 2rem rgba($color-black, .2);
   }

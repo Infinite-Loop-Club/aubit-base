@@ -1,22 +1,38 @@
 .feature {
   @include setWidth;
-  @include clearfix;
+  // @include clearfix;
   margin: 7rem auto;
+
+  display: flex;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &-col {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
 
   @include respond(tab-port) {
     margin: 5rem auto;
   }
 
   @include respond(phone) {
-    margin-top: 10rem;
+    margin-top: 13rem;
     margin-bottom: 4rem;
   }
 }
 
 .vision {
-  width: 50%;
-  padding: 1.5rem 1.5rem 1.5rem 0;
   display: inline-block;
+  margin-bottom: 2rem;
 
   &__heading {
     color: $color-primary-light;
@@ -30,8 +46,6 @@
 }
 
 .nba {
-  width: 50%;
-  padding: 1.5rem 1.5rem 1.5rem 0;
   display: inline-block;
 
   &__heading {
@@ -50,9 +64,11 @@
 }
 
 .mission {
-  width: 50%;
-  float: right;
-  padding: 1.5rem 0 1.5rem 1.5rem;
+
+  @include respond(phone) {
+    order: -1;
+    margin-bottom: 2rem;
+  }
 
   &__heading {
     color: $color-primary-light;
