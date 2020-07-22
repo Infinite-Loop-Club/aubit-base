@@ -122,6 +122,7 @@ header {
 .nav__dropdown {
   background-color: $color-white;
   position: absolute;
+  min-width: 22rem;
   right: 50%;
   margin-top: 1rem;
   transform: translateX(50%);
