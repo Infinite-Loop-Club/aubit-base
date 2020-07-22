@@ -7,7 +7,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999;
 
   &-container {
     @include setWidth;
@@ -15,17 +15,19 @@ header {
     display: flex;
     font-size: 1.8rem;
     align-items: center;
+    z-index: 9999;
   }
 
   &__brand {
     width: 4rem;
     height: 4rem;
     margin-right: auto;
+    z-index: 9999;
 
     &-logo {
       @include fullSizeImage;
-
       z-index: 9999;
+
     }
   }
 
@@ -43,16 +45,20 @@ header {
       flex-direction: column;
       align-items: center;
       transform: translateY(-150%);
-      transition: all 0.3s;
       padding: 2rem;
       opacity: 0;
+      transition: all 0.3s;
     }
   }
 
   &-active {
     transform: translateY(0%);
     opacity: 1;
-    max-height: 100rem;
+    max-height: 400rem;
+  }
+
+  &-active &__list {
+    max-height: 400rem;
   }
 
   &__link {
@@ -168,15 +174,41 @@ header {
   display: none;
   cursor: pointer;
 
-  @media screen and (max-width: 600px) {
+  @include respond(phone) {
     display: block;
+    transform: rotate(180deg);
   }
 
-  div {
-    width: 2.5rem;
-    height: 0.3rem;
-    background-color: $color-primary-dark;
-    margin: 0.4rem;
+  .burger__line {
+
+    position: relative;
+    transform: translateY(1rem);
+    width: 1.5rem;
+
+    &,
+    &::before,
+    &::after {
+      height: 2px;
+      background-color: $color-primary-light;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 3rem;
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .9rem;
+    }
   }
 }
 
