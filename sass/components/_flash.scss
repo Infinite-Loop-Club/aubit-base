@@ -1,11 +1,12 @@
 .flash {
   position: absolute;
-  bottom: 4rem;
-  right: 6rem;
-  padding: 1rem;
+  bottom: 5%;
+  right: 5%;
   border-radius: .5rem;
   background-color: rgba($color-gray-1, .95);
   box-shadow: .5rem 1rem 2rem rgba($color-black, .4);
+
+  overflow: hidden;
 
   &__list {
     list-style: none;
@@ -20,10 +21,14 @@
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 1rem;
+    padding: 1.2rem 2rem;
 
     &:not(:last-child) {
       margin-bottom: 1rem;
+    }
+
+    &:hover {
+      background-color: $color-white;
     }
   }
 
@@ -34,7 +39,8 @@
     &--icon {
       height: 2rem;
       width: 2rem;
-      margin-right: .5rem;
+      margin-right: 1rem;
+      fill: $color-primary-light;
     }
 
     &--text {
