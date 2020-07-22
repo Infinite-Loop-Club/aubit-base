@@ -9,6 +9,10 @@ header {
   width: 100%;
   z-index: 1000;
 
+  @media screen and (max-width: 600px) {
+    overflow-x: hidden;
+  }
+
   &-container {
     @include setWidth;
     padding: 3rem 0;
@@ -29,6 +33,19 @@ header {
 
   &__list {
     list-style: none;
+
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+      background-color: $color-gray-3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+      transform: translateX(100%);
+    }
   }
 
   &__link {
@@ -39,6 +56,16 @@ header {
       color: $color-gray-8;
       display: inline-flex;
       position: relative;
+
+      @media screen and (max-width: 600px) {
+        margin: 2rem;
+      }
+
+      & li {
+        @media screen and (max-width: 600px) {
+          opacity: 0;
+        }
+      }
 
       &::after {
         content: "";
@@ -88,4 +115,21 @@ header {
   background-color: $color-white;
   box-shadow: 0 2px 4px $color-primary-light;
   transition: all 0.3s ease-out;
+}
+
+//hamburger
+.burger {
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    display: inline-block;
+  }
+
+  div {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: $color-gray-5;
+    margin: 0.4rem;
+    // border-radius: 20%;
+  }
 }
