@@ -103,12 +103,48 @@ header {
     &:active {
       color: $color-primary-light !important;
     }
+
+    &--administration{
+      position: relative;
+
+      &:hover ~ .nav__dropdown{
+        display: block;
+      }
+
+    }
+
   }
 
   &__item {
     display: inline-block;
   }
 }
+
+
+//  dropdown
+
+.nav__dropdown{
+
+  background-color: $color-white;
+  position: absolute;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: none;
+
+  &--list{
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+    margin-bottom: 1rem;
+    }
+
+  }
+}
+
+
+
+
 
 // Sticky Nav
 
