@@ -6,13 +6,14 @@
   align-items: center;
   max-width: 60%;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     top: 50%;
     max-width: 100%;
   }
 
   &__showcase {
     width: 90%;
+    margin: auto;
     display: flex;
     align-items: center;
     position: relative;
@@ -23,6 +24,10 @@
     width: 4rem;
     fill: $color-primary-light;
 
+    @include respond(phone) {
+      display: none;
+    }
+
     &--left {
       transform: rotate(180deg);
       margin-right: 1rem;
@@ -30,10 +35,6 @@
 
     &--right {
       margin-left: 1rem;
-
-      @include respond(tab-port) {
-        display: none;
-      }
     }
   }
 
@@ -47,7 +48,7 @@
     &--1 {
       z-index: 100;
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         transform: scale(1.2);
       }
     }
@@ -55,7 +56,7 @@
     &--2 {
       z-index: 50;
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         transform: scale(1.1);
       }
     }
@@ -63,7 +64,7 @@
     &--3 {
       z-index: 25;
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         transform: scale(1);
       }
     }
@@ -71,7 +72,7 @@
     &:not(:last-child) {
       margin-right: 3rem;
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         margin-right: -1rem;
       }
     }
@@ -79,7 +80,7 @@
     &:nth-child(even) {
       transform: scale(1.2);
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         transform: scale(1.1);
       }
     }

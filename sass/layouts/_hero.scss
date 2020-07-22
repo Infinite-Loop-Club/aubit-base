@@ -1,7 +1,7 @@
 .hero {
   height: 100vh;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     height: 120vh;
   }
 

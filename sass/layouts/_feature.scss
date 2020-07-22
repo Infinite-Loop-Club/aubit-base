@@ -8,9 +8,9 @@
   }
 
   @include respond(phone) {
-    margin: 4rem auto; 
+    margin-top: 6rem;
+    margin-bottom: 4rem;
   }
-
 }
 
 .vision {
