@@ -1,7 +1,12 @@
 .hero {
   height: 100vh;
 
-  background-image: linear-gradient(rgba($color-gray-1, 0.8), rgba($color-gray-1, 0.8)), url('../images/hero.png');
+  @include respond(tab-port) {
+    height: 120vh;
+  }
+
+  background-image: linear-gradient(rgba($color-gray-1, 0.8), rgba($color-gray-1, 0.8)),
+  url('../images/hero.png');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -14,5 +19,9 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+
+    @include respond(tab-port) {
+      top: 40%;
+    }
   }
 }
