@@ -11,57 +11,44 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-
-
-      // &>div {
-      //   flex-basis: 33.3333%;
-
-      //    @media only screen and (max-width: 500px){
-      //       flex-basis: 50%;
-      //  }
-
-      // }      
     }
 
-    &-inner1{
+    &-inner1 {
       flex-basis: 33.3333%;
-      @media only screen and (max-width: 500px){
+
+      @media only screen and (max-width: 500px) {
         flex-basis: 100%;
         text-align: center;
         margin-bottom: 1rem;
       }
     }
 
-    &-inner2{
+    &-inner2 {
       flex-basis: 66.6667%;
       display: flex;
       justify-content: space-between;
 
-      @media only screen and (max-width: 500px){
+      @media only screen and (max-width: 500px) {
         flex-basis: 100%;
       }
-
     }
   }
 
   &__heading {
     font-size: 2rem;
 
-    @media only screen and (max-width: 400px){
-        font-size: 1.5rem;
-      }
+    @media only screen and (max-width: 400px) {
+      font-size: 1.5rem;
+    }
   }
-
-  // &__social{
-   
-  // }
 
   &__quick {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: stretch;
 
-    @media only screen and (max-width: 500px){
+    @media only screen and (max-width: 500px) {
       align-items: flex-start;
     }
 
@@ -71,10 +58,10 @@
 .social__list {
   list-style: none;
 
-   @media only screen and (max-width: 500px){
-            display: flex;
-            justify-content: center;
-      }
+  @media only screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+  }
 
   &--icon {
     width: 2rem;
@@ -84,11 +71,12 @@
     transition: all .3s;
   }
 
-  &--text{
-    @media only screen and (max-width: 500px){
-            display: none;
-      }
+  &--text {
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
   }
+
   &-item {
     &:not(:last-child) {
       margin-bottom: 1.3rem;
@@ -104,10 +92,10 @@
       transition: all .3s;
     }
 
-    &:hover{
+    &:hover {
 
       & .social__list--icon,
-      & .social__list--text{
+      & .social__list--text {
         fill: $color-black;
         color: $color-black;
       }
@@ -119,10 +107,14 @@
 .quick__link {
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
-  @media only screen and (max-width: 500px){
-      text-align: left;
-    }
+  @media only screen and (max-width: 500px) {
+    text-align: left;
+  }
 
   &-item {
 
@@ -134,14 +126,14 @@
       display: inline-block;
       transition: all .3s;
 
-      @media only screen and (max-width: 400px){
+      @media only screen and (max-width: 400px) {
         font-size: 1.3rem;
       }
 
     }
 
-    a:hover{
-      color : $color-black;
+    a:hover {
+      color: $color-black;
     }
 
   }
@@ -149,46 +141,44 @@
 
 .contact {
   display: flex;
+  text-align: right;
   flex-direction: column;
   align-items: flex-end;
-}
+  justify-content: space-between;
 
+  &__heading {
+    font-size: 1.5rem;
 
-.contact__heading {
-  font-size: 1.5rem;
-
-  @media only screen and (max-width: 700px){
+    @media only screen and (max-width: 700px) {
       font-size: 1.3rem;
     }
 
-  @media only screen and (min-width :600px) and (max-width: 635px){
+    @media only screen and (min-width :600px) and (max-width: 635px) {
       font-size: 1.1rem;
     }
+  }
 
-}
+  &__heading2 {
+    font-size: 1.3rem;
 
-.contact__heading2 {
-  font-size: 1.3rem;
-
-  @media only screen and (max-width: 700px){
+    @media only screen and (max-width: 700px) {
       font-size: 1rem;
     }
-    
-}
 
-.contact__detail {
-  font-size: 1.3rem;
-
-  &:first-child {
-    margin-top: .5rem;
   }
 
-  &:not(:last-child) {
-    margin-bottom: .5rem;
+  &__detail {
+    font-size: 1.3rem;
+
+    &:first-child {
+      margin-top: .5rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
   }
 }
-
-
 
 .copyrights {
   background-color: $color-primary-dark;
