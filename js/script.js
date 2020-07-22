@@ -22,7 +22,7 @@ const navSlide = () => {
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
     document.querySelector("nav").classList.toggle("white-bg");
-    document.querySelector(".burger__line").classList.toggle("toggle");
+    document.querySelector(".burger__line").classList.toggle("burger__line--toggle");
   });
 };
 

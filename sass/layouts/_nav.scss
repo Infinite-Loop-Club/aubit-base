@@ -208,24 +208,27 @@ header {
     &::after {
       top: .9rem;
     }
-  }
-}
 
-.toggle{
+    &--toggle{
 
-  text-align: center;
-
-  &::before{
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
+      background-color: transparent;
   
+      &::before{
+        top: 0;
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
 
 }
+
+  }
+}
+
+
 
 .white-bg {
   background-color: $color-white;
