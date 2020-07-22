@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".feature").waypoint(
+  $("nav").waypoint(
     function (direction) {
       if (direction == "down") {
         $("nav").addClass("sticky");
@@ -10,7 +10,7 @@ $(document).ready(function () {
       }
     },
     {
-      offset: "50%",
+      offset: "-10rem",
     }
   );
 });
