@@ -16,6 +16,7 @@ header {
     font-size: 1.8rem;
     align-items: center;
     z-index: 9999;
+    transition: padding .3s;
   }
 
   &__brand {
