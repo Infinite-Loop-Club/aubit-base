@@ -3,14 +3,14 @@
   bottom: 5%;
   right: 5%;
   border-radius: .5rem;
-  max-height: 20rem;
+  height: 20rem;
   background-color: rgba($color-gray-1, .95);
   box-shadow: .5rem .8rem 3rem rgba($color-black, .4);
 
   overflow: hidden;
 
   @include respond(phone) {
-    bottom: -5%;
+    bottom: -10%;
     width: 90%;
     box-shadow: .5rem .5rem 2rem rgba($color-black, .2);
   }
@@ -56,27 +56,58 @@
 }
 
 
-.tab__trigger{
+.tab__trigger {
 
-  ul{
+  ul {
 
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-    li{
+    li {
+      flex: 1;
+      z-index: 50;
+      position: relative;
 
-      label{
+
+      &:nth-child(1) {
+        background-color: $color-white;
+      }
+
+      &:nth-child(2) {
+        background-color: $color-gray-2;
+      }
+
+      &:nth-child(3) {
+        background-color: $color-gray-4;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        margin: auto;
+        height: 3px;
+        background-color: $color-primary-light;
+      }
+
+      label {
         position: relative;
+        padding: 1rem;
         display: block;
         cursor: pointer;
-        background-color: orangered;
       }
     }
   }
-
 }
 
-.tab__container--top{
+.tab__container--top {
+
+  transition: all .3s;
 
   input {
     position: absolute;
@@ -86,17 +117,28 @@
     z-index: -100;
     top: -10000px;
 
-    &:checked + .tab__content{
+    &:checked+.tab__content {
       display: block;
     }
-
   }
 
+  div {
+    &:nth-of-type(1) {
+      background-color: $color-white;
+    }
+
+    &:nth-of-type(2) {
+      background-color: $color-gray-2;
+    }
+
+    &:nth-of-type(3) {
+      background-color: $color-gray-4;
+    }
+  }
 }
 
-.tab__content{
-  background-color: green;
-  padding: 2rem ;
+.tab__content {
+  padding: 2rem;
+  height: 20rem;
   display: none;
-
 }
