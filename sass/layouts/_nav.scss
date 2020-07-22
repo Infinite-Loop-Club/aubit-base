@@ -211,6 +211,22 @@ header {
   }
 }
 
+.toggle{
+
+  text-align: center;
+
+  &::before{
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  
+
+}
+
 .white-bg {
   background-color: $color-white;
 }
