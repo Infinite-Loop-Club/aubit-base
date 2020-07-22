@@ -3,6 +3,7 @@
   bottom: 5%;
   right: 5%;
   border-radius: .5rem;
+  max-height: 20rem;
   background-color: rgba($color-gray-1, .95);
   box-shadow: .5rem .8rem 3rem rgba($color-black, .4);
 
@@ -21,6 +22,8 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0;
+
+    animation: marquee 6s infinite cubic-bezier(1, 1, 1, 1);
   }
 
   &__link {
