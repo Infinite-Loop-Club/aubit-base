@@ -6,9 +6,9 @@
   }
 
   background-image: linear-gradient(rgba($color-gray-1, 0.8), rgba($color-gray-1, 0.8)),
-  url('../images/hero.png');
+  url('../images/hero.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative;
 
   &-container {
