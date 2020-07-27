@@ -25,11 +25,19 @@ header {
     margin-right: auto;
     z-index: 9999;
 
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+
     &-logo {
       @include fullSizeImage;
-      z-index: 9999;
-
     }
+
+    &-text{
+      color: $color-primary-light;
+      margin-left: 1.5rem;
+    }
+
   }
 
   &__list {

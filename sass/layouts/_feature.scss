@@ -33,6 +33,9 @@
 .vision {
   display: inline-block;
   margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1.2rem 2rem black;
 
   &__heading {
     color: $color-primary-light;
@@ -47,6 +50,9 @@
 
 .nba {
   display: inline-block;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1.2rem 2.5rem black;
 
   &__heading {
     color: $color-primary-light;
@@ -64,6 +70,9 @@
 }
 
 .mission {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1.2rem 2rem black;
 
   @include respond(phone) {
     order: -1;
