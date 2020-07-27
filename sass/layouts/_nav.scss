@@ -33,7 +33,7 @@ header {
       @include fullSizeImage;
     }
 
-    &-text{
+    &-text {
       color: $color-primary-light;
       margin-left: 1.5rem;
     }
@@ -92,6 +92,12 @@ header {
         width: 50%;
         border-radius: 1px;
         background-color: $color-primary-light;
+
+        @include respond(phone) {
+          left: 0;
+          bottom: -.5rem;
+          transform: none;
+        }
 
         opacity: 0;
         transition: opacity 0.3s;
