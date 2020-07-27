@@ -25,11 +25,6 @@
   @include respond(tab-port) {
     margin: 5rem auto;
   }
-
-  @include respond(phone) {
-    margin-top: 13rem;
-    margin-bottom: 4rem;
-  }
 }
 
 .vision {
