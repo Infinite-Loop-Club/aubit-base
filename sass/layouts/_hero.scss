@@ -1,8 +1,10 @@
 .hero {
   height: 100vh;
+  display: flex;
+  justify-content: flex-end;
 
   @include respond(phone) {
-    height: 120vh;
+    height: 140vh;
   }
 
   background-image: linear-gradient(rgba($color-gray-1, 0.8), rgba($color-gray-1, 0.8)),
@@ -13,15 +15,41 @@
 
   &-container {
     @include setWidth;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+
+    @include respond(big) {
+      justify-content: center;
+    }
   }
 
-  &__title {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  &__top {
+    margin-top: 7rem;
+    margin-bottom: -7rem;
 
-    @include respond(tab-port) {
-      top: 40%;
+    @include respond(phone) {
+      margin-bottom: -2rem;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &>div {
+      margin-top: 5rem;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

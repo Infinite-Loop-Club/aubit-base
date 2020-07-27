@@ -53,6 +53,13 @@
     }
   }
 
+  @if ($breakpoint==big) {
+    @media screen and (max-width: 93.75em) {
+      // 1500px = (1em = 16px)
+      @content;
+    }
+  }
+
   @if ($breakpoint==huge) {
     @media only screen and (min-width: 112.5em) {
       //1800px = 112.5em (1em = 16px)
