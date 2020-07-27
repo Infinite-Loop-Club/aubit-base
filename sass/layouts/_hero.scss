@@ -56,9 +56,9 @@
   & .important {
     position: absolute;
     top: 15%;
-    background-color: #3333;
-    width: 80%;
-    margin-left: 5%;
+    background-color: rgba($color-black, 0.3);
+    color: $color-white;
+    width: 90%;
     border-radius: 1rem;
     overflow: hidden;
 
@@ -76,6 +76,14 @@
 
       @include respond(tab-land) {
         animation-duration: 10s;
+      }
+
+      @include respond(big) {
+        animation-duration: 12s;
+      }
+
+      @include respond(huge) {
+        animation-duration: 16s;
       }
 
       li::before {
