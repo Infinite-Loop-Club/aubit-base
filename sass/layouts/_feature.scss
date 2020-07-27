@@ -33,7 +33,7 @@
   margin-bottom: 2rem;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 1px 0.2rem 1.2rem rgba($color-black, 0.6);
+  box-shadow: 1px .3rem 1.2rem rgba($color-black, 0.4);
 
   &__heading {
     color: $color-primary-light;
@@ -50,7 +50,7 @@
   display: inline-block;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 1px 0.2rem 1.2rem rgba($color-black, 0.6);
+  box-shadow: 1px .3rem 1.2rem rgba($color-black, 0.4);
 
   &__heading {
     color: $color-primary-light;
@@ -70,7 +70,7 @@
 .mission {
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 1px 0.2rem 1.2rem rgba($color-black, 0.6);
+  box-shadow: 1px .3rem 1.2rem rgba($color-black, 0.4);
 
   @include respond(phone) {
     order: -1;
