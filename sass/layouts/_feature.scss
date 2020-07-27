@@ -1,8 +1,6 @@
 .feature {
   @include setWidth;
-  // @include clearfix;
   margin: 7rem auto;
-
   display: flex;
 
   @include respond(phone) {
@@ -35,7 +33,7 @@
   margin-bottom: 2rem;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 1px 1.2rem 2rem black;
+  box-shadow: 1px 0.2rem 1.2rem rgba($color-black, 0.6);
 
   &__heading {
     color: $color-primary-light;
@@ -52,7 +50,7 @@
   display: inline-block;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 1px 1.2rem 2.5rem black;
+  box-shadow: 1px 0.2rem 1.2rem rgba($color-black, 0.6);
 
   &__heading {
     color: $color-primary-light;
@@ -72,7 +70,7 @@
 .mission {
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 1px 1.2rem 2rem black;
+  box-shadow: 1px 0.2rem 1.2rem rgba($color-black, 0.6);
 
   @include respond(phone) {
     order: -1;
@@ -95,10 +93,10 @@
 
   &__items {
     position: relative;
-    padding-bottom: .7rem;
+    padding-bottom: 0.7rem;
 
     &:not(:last-child) {
-      margin-bottom: .7rem;
+      margin-bottom: 0.7rem;
     }
 
     &:after {
