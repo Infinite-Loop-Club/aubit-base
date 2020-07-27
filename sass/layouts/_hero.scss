@@ -53,7 +53,7 @@
     }
   }
 
-  & .important{
+  & .important {
     position: absolute;
     top: 15%;
     background-color: #3333;
@@ -61,8 +61,8 @@
     margin-left: 5%;
     border-radius: 1rem;
     overflow: hidden;
-    
-    &__news{
+
+    &__news {
       display: flex;
       width: 100%;
       justify-content: space-around;
@@ -70,19 +70,21 @@
       list-style: none;
       padding: 3px;
 
-      @include respond(tab-land){
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      @include respond(tab-land) {
         animation-duration: 10s;
       }
-      
 
-      li::before{
+      li::before {
         content: "\2022";
         display: inline-block;
         color: $color-primary-light;
         margin-right: 1rem;
       }
     }
-
   }
 
 }
