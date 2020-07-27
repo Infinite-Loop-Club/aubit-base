@@ -1,54 +1,5 @@
 header {
   position: relative;
-
-
-  .important {
-    background-color: rgba($color-black, 0.3);
-    color: $color-white;
-    border-radius: 1rem;
-    position: absolute;
-
-    &__news {
-      display: inline-flex;
-      justify-content: space-around;
-      animation: marquee-hor 15s cubic-bezier(1, 1, 1, 1) infinite;
-      list-style: none;
-      padding: 3px;
-
-      &>li {
-        display: inline-block;
-
-        &:not(:last-child) {
-          margin-right: 3rem;
-        }
-      }
-    }
-
-    //     &:hover {
-    //       animation-play-state: paused;
-    //     }
-
-    //     @include respond(tab-land) {
-    //       animation-duration: 10s;
-    //     }
-
-    //     @include respond(big) {
-    //       animation-duration: 12s;
-    //     }
-
-    //     @include respond(huge) {
-    //       animation-duration: 16s;
-    //     }
-
-    //     li::before {
-    //       content: "\2022";
-    //       display: inline-block;
-    //       color: $color-primary-light;
-    //       margin-right: 1rem;
-    //     }
-    //   }
-  }
-
 }
 
 .nav {
