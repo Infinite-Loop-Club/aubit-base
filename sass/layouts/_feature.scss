@@ -15,6 +15,10 @@
 
     &:not(:last-child) {
       margin-right: 2rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+      }
     }
   }
 
